@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
+    "target": "es2020",        // Target modern JavaScript features
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "es2020"],  // Ensure global DOM and Promise types are included
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["node", "estree"] // Include Node.js and estree types
   },
   "exclude": ["node_modules", "dist"]
 }
